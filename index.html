@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./Resources/CSS/style.css">
+  <title>CSS Grids</title>
+  <style>
+    .wrapper{
+      display:grid;
+      grid-template-columns: 70% 30%;
+      /*
+      grid-column-gap:1em;
+      grid-row-gap: 1em;
+      */
+      grid-gap: 1em;
+    }
+
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nesciunt quibusdam dolor illo illum laudantium assumenda iusto dicta tempore sit quos est necessitatibus ex numquam quam minima ea commodi, veritatis?
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis expedita optio nostrum repellat eveniet tempore, architecto cupiditate soluta inventore nesciunt atque. Voluptatibus, fugit fugiat blanditiis minus!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nesciunt quibusdam dolor illo illum laudantium assumenda iusto dicta tempore sit quos est necessitatibus ex numquam quam minima ea commodi, veritatis?
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis expedita optio nostrum repellat eveniet tempore, architecto cupiditate soluta inventore nesciunt atque. Voluptatibus, fugit fugiat blanditiis minus! The quick brown dogs jumped over the lazy fox.
+    </div>
+    <div>
+      Hello
+    </div>
+    <div>hello2</div>
+</body>
+</html>
